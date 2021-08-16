@@ -1,8 +1,8 @@
--	hosts: balancers
+- hosts: balancers
   become: true
   tasks:
-    - Name:  Install haproxy 
+    - name:  Install haproxy 
       yum:
-        Name: haproxy
+        name: haproxy
         state: installed
 
